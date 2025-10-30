@@ -70,7 +70,7 @@ public class withdraw extends JFrame implements ActionListener{
                     conn.s.executeUpdate(query);
                     JOptionPane.showMessageDialog(null, "Rs " + number + " Withdraw Successfully");
                     setVisible(false);
-                    new Transaction(pinnumber).setVisible(true);
+                    new ws(pinnumber).setVisible(true);
                 } catch (Exception e){
                     System.out.println(e);
                 }
