@@ -77,7 +77,7 @@ public class Deposit extends JFrame implements ActionListener{
                     conn.s.executeUpdate(query);
                     JOptionPane.showMessageDialog(null, "Rs " + number + " Deposited Successfully");
                     setVisible(false);
-                    new Transaction(pinnumber).setVisible(true);
+                    new ds(pinnumber).setVisible(true);
                 } catch (Exception e){
                     System.out.println(e);
                 }
